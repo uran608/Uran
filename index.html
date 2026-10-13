@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Students Uran helps Pakistani students explore universities, scholarships, admissions and application guides.">
+  <meta name="theme-color" content="#102747">
+  <title>Students Uran — Discover. Apply. Achieve.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Students Uran home">
+      <span class="brand-mark">SU</span>
+      <span>Students <b>Uran</b><small>Discover. Apply. Achieve.</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav">
+      <a href="index.html" class="active">Home</a><a href="universities.html">Universities</a><a href="scholarships.html">Scholarships</a>
+      <a href="admission-updates.html">Admission Updates</a><a href="application-guides.html">Application Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR EDUCATION JOURNEY STARTS HERE</div>
+        <h1>Your future<br>starts <span>here.</span></h1>
+        <p>Find universities, explore scholarships and get practical guidance for your next step in education — all in one place.</p>
+        <form class="hero-search" id="heroSearch">
+          <span aria-hidden="true">⌕</span><input id="globalSearch" type="search" placeholder="Search universities or scholarships..." aria-label="Search website">
+          <button type="submit">Search <span>→</span></button>
+        </form>
+        <div class="hero-note"><span>✓</span> Made for students across Pakistan</div>
+      </div>
+      <div class="hero-stats">
+        <div><strong>Explore</strong><span>Universities</span></div><div><strong>Discover</strong><span>Scholarships</span></div><div><strong>Prepare</strong><span>With useful guides</span></div>
+      </div>
+    </section>
+
+    <section class="section quick-section">
+      <div class="section-heading"><div><span class="kicker">START EXPLORING</span><h2>What are you looking for?</h2></div><p>Find the information you need to make a confident next move.</p></div>
+      <div class="quick-grid">
+        <a class="quick-card" href="universities.html"><span class="quick-icon">⌂</span><h3>Universities</h3><p>Explore institutions, programs and admission information.</p><span class="card-link">Explore universities ↗</span></a>
+        <a class="quick-card" href="scholarships.html"><span class="quick-icon">✳</span><h3>Scholarships</h3><p>Understand funding options and how to apply.</p><span class="card-link">Find funding ↗</span></a>
+        <a class="quick-card" href="admission-updates.html"><span class="quick-icon">◷</span><h3>Admission updates</h3><p>Keep track of announcements and important dates.</p><span class="card-link">View updates ↗</span></a>
+        <a class="quick-card" href="application-guides.html"><span class="quick-icon">▤</span><h3>Application guides</h3><p>Learn about documents, entry tests and applications.</p><span class="card-link">Read guides ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="about-monogram">SU<span>✦</span></div><div class="about-caption">A clearer path to opportunity.</div></div>
+      <div class="about-copy"><span class="kicker">ABOUT STUDENTS URAN</span><h2>Helping students move forward with confidence.</h2><p>Students Uran is an education guidance initiative focused on helping students in Pakistan discover universities, understand scholarship opportunities and navigate the application process.</p>
+        <div class="value-list"><div><span>✓</span><div><b>Useful information</b><small>Clear guides and links to official sources.</small></div></div><div><span>✓</span><div><b>Student-first approach</b><small>Resources that are easy to explore and understand.</small></div></div><div><span>✓</span><div><b>Transparency</b><small>Encouraging students to verify requirements and deadlines.</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact"><div><span class="kicker">LET'S CONNECT</span><h2>Building better access to education.</h2><p>For organisational partnerships, corrections or general enquiries, contact the Students Uran team.</p></div><div class="contact-actions"><a class="button button-green" id="emailLink" href="mailto:studentsuran@gmail.com">Email the team ↗</a></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">SU</span><span>Students <b>Uran</b><small>Discover. Apply. Achieve.</small></span></a><div class="footer-links"><a href="universities.html">Universities</a><a href="scholarships.html">Scholarships</a><a href="application-guides.html">Guides</a><a href="#about">About</a></div><p>© <span id="year"></span> Students Uran. All rights reserved.</p></footer>
+
+  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" id="dialogClose" aria-label="Close dialog">×</button><div id="dialogContent"></div></dialog>
+  <script src="data.js"></script><script src="supabase-config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="live-data.js"></script><script src="app.js"></script>
+</body>
+</html>
